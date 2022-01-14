@@ -16,7 +16,7 @@ pipeline {
      
    }
      
-     tage('Run Docker') {
+     stage('Run Docker') {
        // build the docker image from the source code using the BUILD_ID parameter in image name
      steps{
        sh 'sudo docker run -p 8000:8000 --name flask-app -d myapplication'
